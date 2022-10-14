@@ -12,7 +12,6 @@ html, body {
     height: 100%;
 }
 button{
-    background-image: linear-gradient(right, solid, black, gray);
     border: 1.5px solid royalblue;
     width: 100px;
     height: 40px;
@@ -22,7 +21,10 @@ button{
 button:hover{
     transition: .5s;
 }
-/*cabeçalho*/
+button:focus{
+    background-color: red;
+}
+/*----------cabeçalho----------*/
 .align-content{
     padding: 10px;
     max-width: 1500px;
@@ -32,6 +34,7 @@ header{
     display: flex;
     justify-content: center;
 }
+/*nav*/
 header nav{
     color: white;
     padding: 10px 20px;
@@ -79,6 +82,11 @@ header nav ul li a{
 header nav ul li a:hover{
     color: orange;
 }
+.nav-content{
+    display: flex;
+    width: 100%;
+}
+/*end nav*/
 .box-itens{
     display: inline-block;
 }
@@ -136,7 +144,7 @@ header nav ul li a:hover{
     color: orange;
 }
 .login-content{
-    width: 25%;
+    width: 500px;
     text-align: center;
     margin: auto;
     padding: 10px;
